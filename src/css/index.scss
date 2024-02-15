@@ -2,7 +2,6 @@
 @import 'mixins';
 
 body {
-  background: url('../../dist/images/park.jpg') center/cover;
   height: $full-height;
   width: $full-width;
   margin: 0;
@@ -12,8 +11,42 @@ nav {
   width: $full-width;
   background-color: $secondary-accent-color;
   margin: 0;
+  height: 45px;
 }
 
 .dog-icon {
-  width: 50px;
+  width: 30px;
+  height: 30px;
+  margin-left: 22px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+nav, 
+.intro-area,
+.info-area,
+.learn-more-area {
+  border: 2px, solid, black;
+  width: $full-width;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-area {
+  height: 435px;
+  background-image: url(../../dist/images/park.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.info-area {
+  height: 485px;
+}
+
+.learn-more-area {
+  height: 180px;
+  background-color: $main-accent-color;
 }
