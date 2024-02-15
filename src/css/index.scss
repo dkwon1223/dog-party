@@ -36,8 +36,7 @@ nav,
 }
 
 main {
-  display: flex;
-  flex-direction: column;
+  @include flex-column();
 }
 
 .nav-button {
@@ -54,8 +53,6 @@ main {
   margin-right: 40px;
 }
 
-
-
 .intro-area {
   height: 585px;
   background-image: url(../../dist/images/park.jpg);
@@ -64,10 +61,10 @@ main {
 }
 
 .info-area {
-  height: 485px;
+  height: 655px;
 }
 
 .learn-more-area {
-  height: 180px;
+  height: 245px;
   background-color: $main-accent-color;
 }
