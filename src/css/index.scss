@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'mixins';
 
+html {
+  font-family: "Raleway", sans-serif;
+}
+
 body {
   height: $full-height;
   width: $full-width;
@@ -8,25 +12,26 @@ body {
 }
 
 nav {
-  width: $full-width;
+  display: flex;
+  justify-content: flex-end;
   background-color: $secondary-accent-color;
-  margin: 0;
-  height: 45px;
+  margin-left: 0;
+  height: 62px;
 }
 
 .dog-icon {
-  width: 30px;
-  height: 30px;
-  margin-left: 22px;
-  margin-top: 10px;
-  margin-bottom: 8px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  margin-top: 13px;
+  margin-bottom: 11px;
 }
 
 nav, 
 .intro-area,
 .info-area,
 .learn-more-area {
-  border: 2px, solid, black;
   width: $full-width;
 }
 
@@ -35,8 +40,24 @@ main {
   flex-direction: column;
 }
 
+.nav-button {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: large;
+  border: none;
+  background-color: $secondary-accent-color;
+  margin-right: 20px;
+  color: white;
+}
+
+#factsNav {
+  margin-right: 40px;
+}
+
+
+
 .intro-area {
-  height: 435px;
+  height: 585px;
   background-image: url(../../dist/images/park.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
