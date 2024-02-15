@@ -1,14 +1,17 @@
 @import 'variables';
+@import 'mixins';
 
 body {
   background: url('../../dist/images/park.jpg') center/cover;
-  height: 100vh;
-  width: 100%;
+  height: $full-height;
+  width: $full-width;
+  margin: 0;
 }
 
 nav {
-  // Example of using a variable:
+  width: $full-width;
   background-color: $secondary-accent-color;
+  margin: 0;
 }
 
 .dog-icon {
