@@ -113,16 +113,28 @@ button {
   margin-top: 20px;
 }
 
-
-
-
-
-
-
-
-
 .learn-more-area {
+  @include flex-column();
   height: 245px;
   background-color: $main-accent-color;
+  color: white;
+  h3 {
+    font-size: larger;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  a {
+    color: white;
+  }
+}
+
+.social-icons {
+  @include flex-row;
+  width: 500px;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  img {
+    height: 55px;
+  }
 }
 
