@@ -1,4 +1,21 @@
 @mixin flex-column() {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-row() {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin circle-photo($border-thickness) {
+    border-radius: 50%;
+    border: $border-thickness solid #3F8DA8;
+}
+
+@mixin page-button($border-thickness) {
+    color: #3F8DA8;
+    border: $border-thickness solid #3F8DA8;
 }
