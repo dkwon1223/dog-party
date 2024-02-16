@@ -3,9 +3,16 @@
   "version": "1.0.0",
   "description": "Dog Party starter kit using webpack and SCSS/SASS enabled.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dkwon1223/dog-party.git"
+  },
+  "homepage": "https://dkwon1223.github.io/dog-party",
   "scripts": {
     "start": "webpack server",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Turing School of Software and Design",
   "license": "MIT",
